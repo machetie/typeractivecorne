@@ -1,18 +1,9 @@
 /*
  * Combos configuration for Corne keyboard
+ *
+ * IMPORTANT: All combos have been moved directly into corne.keymap
+ * for Keymap Editor compatibility. This file is kept for reference
+ * but its contents are no longer used in the build.
  */
 
-#include "layer_defs.dtsi"
-
-/ {
-    combos { 
-        compatible = "zmk,combos";
-        
-        // Toggle mouse layer when Tab and Backspace are pressed together
-        toggle_mouse_layer {
-            timeout-ms = <50>;
-            key-positions = <38 40>; // Tab (left) and Backspace (right) keys
-            bindings = <&tog MOUSE_LAYER>;
-        };
-    };
-};
+// Original combo definitions were here but have been relocated to corne.keymap
