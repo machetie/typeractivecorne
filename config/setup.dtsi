@@ -5,7 +5,8 @@
 
 #include "layer_defs.dtsi"
 #include "behaviors.dtsi"
-#include "combos.dtsi"
+// Combos are now included directly in corne.keymap for Keymap Editor compatibility
+// #include "combos.dtsi"
 
 // Include the keymap last to ensure all other configurations are loaded first
 #include "corne.keymap"
