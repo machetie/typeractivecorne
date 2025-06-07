@@ -204,23 +204,14 @@
         };
         
         /*
-         * MOUSE LAYER
-         * ,-----------------------------------------.                    ,-----------------------------------------.        
-         * |      | UNDO |      | COPY | PASTE|     |                    | SCL← | SCL↑ |  MUP | SCL↓ | SCL→ |ACCENT|
-         * |------+-----+-----+-----+-----+-----|                    |-----+-----+-----+-----+-----+------|
-         * |      | LGUI | LALT | LCTL | LSFT|     |                    |     | MLFT | MDWN | MRGT | MB3  | TOG |
-         * |------+-----+-----+-----+-----+-----|                    |-----+-----+-----+-----+-----+------|
-         * |      | REDO | ALL  | CUT  |     |     |                    |     | MB4  | MB3  | MB5  |ACCEL |     |
-         * `-----------------------------------------'                    `-----------------------------------------'
-         *          | ESC  | MB2  | MB1  |                              | SCRL | DEL  | MB3  |
-         *          `--------------------'                              `--------------------'
+         * MOUSE LAYER - SIMPLIFIED TEST VERSION
          */
         mouse_layer {
             bindings = <
-&trans &kp LC(Z) &trans    &kp LC(C) &kp LC(V) &trans &mwh SCROLL_LEFT &mwh SCROLL_UP   &mmv MOVE_UP   &mwh SCROLL_DOWN &mwh SCROLL_RIGHT &tog MOUSE_LAYER
-&trans &kp LGUI  &kp LALT  &kp LCTRL &kp LSHFT &trans &trans           &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT  &mkp MB3          &tog MOUSE_LAYER
-&trans &kp LC(Y) &kp LC(A) &kp LC(X) &trans    &trans &trans           &mkp MB4         &mkp MB3       &mkp MB5         &kp K_SCROLL_LOCK &trans
-                           &kp ESC   &mkp MB2  &mkp MB1 &mwh SCROLL_DOWN &kp DELETE     &mkp MB3
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                     &trans &trans &trans &trans &trans &trans
             >;
         };
     };
